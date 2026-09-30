@@ -129,7 +129,7 @@ ul {
 
 
 /* =====================================================
-   5. HERO
+   5. HERO DA PÁGINA INICIAL
    ===================================================== */
 
 .hero {
@@ -145,9 +145,6 @@ ul {
 
     align-items: center;
 }
-
-
-/* TEXTO */
 
 .hero-texto {
     max-width: 600px;
@@ -190,9 +187,7 @@ ul {
 
 .hero-imagem {
     width: 100%;
-
     overflow: hidden;
-
     border-radius: 15px;
 }
 
@@ -245,7 +240,6 @@ ul {
 
 .botao:hover {
     background-color: #D94C1B;
-
     transform: translateY(-2px);
 }
 
@@ -275,7 +269,6 @@ ul {
 
 .centralizado {
     text-align: center;
-
     margin: 0 auto 50px;
 }
 
@@ -295,13 +288,12 @@ ul {
 
 .areas {
     background-color: #F5F6F8;
-
     padding: 90px 0;
 }
 
 
 /* =====================================================
-   11. CARDS
+   11. CARDS DA PÁGINA INICIAL
    ===================================================== */
 
 .cards {
@@ -321,17 +313,10 @@ ul {
 
     border-radius: 10px;
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-
-    box-shadow: 0 12px 30px rgba(16, 24, 39, 0.10);
-
     border-color: #F15A24;
 }
 
@@ -372,7 +357,7 @@ ul {
 
 
 /* =====================================================
-   12. FLUXO
+   12. FLUXO DA PÁGINA INICIAL
    ===================================================== */
 
 .fluxo {
@@ -389,9 +374,6 @@ ul {
     align-items: center;
 }
 
-
-/* TEXTO */
-
 .fluxo-texto h2 {
     color: #101827;
 
@@ -406,9 +388,7 @@ ul {
 }
 
 
-/* =====================================================
-   13. ETAPAS
-   ===================================================== */
+/* ETAPAS */
 
 .fluxo-etapas {
     display: flex;
@@ -457,7 +437,442 @@ ul {
 
 
 /* =====================================================
-   14. CHAMADA FINAL
+   13. TÍTULO DAS PÁGINAS INTERNAS
+   ===================================================== */
+
+.titulo-pagina {
+    background-color: #F5F6F8;
+
+    padding: 80px 0;
+}
+
+.titulo-pagina h1 {
+    color: #101827;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.titulo-pagina p:not(.texto-destaque) {
+    color: #667085;
+
+    font-size: 18px;
+
+    max-width: 650px;
+}
+
+
+/* =====================================================
+   14. PRODUTIVIDADE - INTRODUÇÃO
+   ===================================================== */
+
+.produtividade-intro {
+    padding: 80px 0 50px;
+}
+
+
+/* =====================================================
+   15. PRODUTIVIDADE - FLUXO
+   ===================================================== */
+
+.produtividade-fluxo {
+    padding: 40px 0 90px;
+}
+
+.fluxo-produtividade {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 18px;
+}
+
+.bloco-produtividade {
+    flex: 1;
+
+    background-color: #F5F6F8;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 10px;
+
+    padding: 30px;
+}
+
+.numero-bloco {
+    color: #F15A24;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.bloco-produtividade h2 {
+    color: #101827;
+
+    font-size: 28px;
+
+    margin: 10px 0 12px;
+}
+
+.bloco-produtividade > p {
+    color: #667085;
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* EXEMPLO DO DADO */
+
+.exemplo-dado {
+    background-color: #FFFFFF;
+
+    border-left: 4px solid #F15A24;
+
+    border-radius: 6px;
+
+    padding: 15px 18px;
+}
+
+.exemplo-dado span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+}
+
+.exemplo-dado strong {
+    display: inline-block;
+
+    color: #101827;
+
+    font-size: 30px;
+
+    line-height: 1.1;
+}
+
+.exemplo-dado small {
+    color: #667085;
+
+    font-size: 13px;
+
+    margin-left: 5px;
+}
+
+
+/* SETAS */
+
+.seta-produtividade {
+    display: flex;
+
+    align-items: center;
+
+    color: #F15A24;
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   16. PRODUTIVIDADE - INDICADORES
+   ===================================================== */
+
+.indicadores {
+    background-color: #F5F6F8;
+
+    padding: 90px 0;
+}
+
+.cards-indicadores {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.indicador-card {
+    background-color: #FFFFFF;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 10px;
+
+    padding: 28px;
+
+    text-align: center;
+}
+
+.indicador-card span {
+    display: block;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.indicador-card strong {
+    display: block;
+
+    color: #101827;
+
+    font-size: 36px;
+
+    line-height: 1.1;
+
+    margin-bottom: 5px;
+}
+
+.indicador-card p {
+    color: #F15A24;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   17. PRODUTIVIDADE - TIPOS DE INDICADORES
+   ===================================================== */
+
+.tipos-indicadores {
+    padding: 90px 0;
+}
+
+.lista-indicadores {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 45px;
+}
+
+.lista-indicadores article {
+    border-top: 3px solid #F15A24;
+
+    padding: 25px 5px 10px;
+}
+
+.lista-indicadores h3 {
+    color: #101827;
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.lista-indicadores p {
+    color: #667085;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   18. OPERAÇÃO & INSIGHTS - INTRODUÇÃO
+   ===================================================== */
+
+.insights-intro {
+    padding: 80px 0 70px;
+}
+
+.operacao-etapas {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.operacao-etapa {
+    padding-right: 25px;
+
+    border-right: 1px solid #E5E7EB;
+}
+
+.operacao-etapa:last-child {
+    border-right: none;
+}
+
+.operacao-etapa span {
+    color: #F15A24;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.operacao-etapa h3 {
+    color: #101827;
+
+    font-size: 21px;
+
+    margin: 10px 0;
+}
+
+.operacao-etapa p {
+    color: #667085;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   19. OPERAÇÃO & INSIGHTS - OCORRÊNCIAS
+   ===================================================== */
+
+.ocorrencias {
+    background-color: #F5F6F8;
+
+    padding: 90px 0;
+}
+
+.cards-ocorrencias {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+    margin-top: 50px;
+}
+
+.ocorrencia-card {
+    padding: 10px 25px 10px 0;
+
+    border-bottom: 2px solid #E5E7EB;
+}
+
+.ocorrencia-numero {
+    color: #F15A24;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.ocorrencia-card h3 {
+    color: #101827;
+
+    font-size: 22px;
+
+    margin: 10px 0;
+}
+
+.ocorrencia-card p {
+    color: #667085;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   20. OPERAÇÃO & INSIGHTS - INSIGHTS
+   ===================================================== */
+
+.insights {
+    padding: 90px 0;
+}
+
+.cards-insights {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.insight-card {
+    padding: 30px 0;
+
+    border-top: 1px solid #D9DEE7;
+}
+
+.insight-destaque {
+    color: #F15A24;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.insight-card h3 {
+    color: #101827;
+
+    font-size: 21px;
+
+    line-height: 1.3;
+
+    margin: 12px 0;
+}
+
+.insight-card p {
+    color: #667085;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   21. OPERAÇÃO & INSIGHTS - VOCÊ SABIA
+   ===================================================== */
+
+.voce-sabia {
+    background-color: #F5F6F8;
+
+    padding: 70px 0;
+}
+
+.voce-sabia-conteudo {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.voce-sabia h2 {
+    color: #101827;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+}
+
+.voce-sabia-texto p {
+    color: #667085;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.voce-sabia-texto p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   22. CHAMADA FINAL
    ===================================================== */
 
 .chamada {
@@ -492,7 +907,7 @@ ul {
 
 
 /* =====================================================
-   15. RODAPÉ
+   23. RODAPÉ
    ===================================================== */
 
 .rodape {
@@ -551,7 +966,7 @@ ul {
 
 
 /* =====================================================
-   16. FINAL DO RODAPÉ
+   24. FINAL DO RODAPÉ
    ===================================================== */
 
 .rodape-final {
@@ -568,7 +983,7 @@ ul {
 
 
 /* =====================================================
-   17. TABLETS
+   25. TABLETS
    ===================================================== */
 
 @media (max-width: 1000px) {
@@ -597,11 +1012,38 @@ ul {
         grid-template-columns: 1fr;
     }
 
+    .cards-indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .operacao-etapas {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+    .operacao-etapa {
+        border-right: none;
+    }
+
+    .cards-ocorrencias {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-insights {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .voce-sabia-conteudo {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
 }
 
 
 /* =====================================================
-   18. TABLETS PEQUENOS
+   26. TABLETS PEQUENOS
    ===================================================== */
 
 @media (max-width: 800px) {
@@ -673,11 +1115,43 @@ ul {
 
         gap: 40px;
     }
+
+    .fluxo-produtividade {
+        flex-direction: column;
+    }
+
+    .bloco-produtividade {
+        width: 100%;
+    }
+
+    .seta-produtividade {
+        display: none;
+    }
+
+    .lista-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .operacao-etapas {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-top: 35px;
+    }
+
+    .cards-ocorrencias {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-insights {
+        grid-template-columns: 1fr;
+    }
 }
 
 
 /* =====================================================
-   19. CELULARES
+   27. CELULARES
    ===================================================== */
 
 @media (max-width: 650px) {
@@ -716,21 +1190,6 @@ ul {
         padding: 50px 0;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     .hero h1 {
         font-size: 36px;
 
@@ -783,21 +1242,86 @@ ul {
     }
 
 
-    /* CARDS */
+    /* PÁGINAS INTERNAS */
 
-    .card {
-        padding: 28px;
+    .titulo-pagina {
+        padding: 55px 0;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 34px;
+    }
+
+    .titulo-pagina p:not(.texto-destaque) {
+        font-size: 16px;
     }
 
 
-    /* FLUXO */
+    /* PRODUTIVIDADE */
 
-    .fluxo-etapas {
-        gap: 10px;
+    .produtividade-intro {
+        padding: 60px 0 30px;
     }
 
-    .etapa {
-        padding: 22px;
+    .produtividade-fluxo {
+        padding: 30px 0 65px;
+    }
+
+    .bloco-produtividade {
+        padding: 25px;
+    }
+
+    .bloco-produtividade h2 {
+        font-size: 25px;
+    }
+
+    .indicadores {
+        padding: 65px 0;
+    }
+
+    .cards-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .indicador-card strong {
+        font-size: 32px;
+    }
+
+    .tipos-indicadores {
+        padding: 65px 0;
+    }
+
+    .lista-indicadores {
+        margin-top: 35px;
+    }
+
+
+    /* INSIGHTS */
+
+    .insights-intro {
+        padding: 60px 0;
+    }
+
+    .operacao-etapa {
+        padding-right: 0;
+    }
+
+    .ocorrencias,
+    .insights {
+        padding: 65px 0;
+    }
+
+    .cards-ocorrencias,
+    .cards-insights {
+        margin-top: 35px;
+    }
+
+    .voce-sabia {
+        padding: 55px 0;
+    }
+
+    .voce-sabia h2 {
+        font-size: 28px;
     }
 
 
@@ -825,7 +1349,7 @@ ul {
 
 
 /* =====================================================
-   20. CELULARES MUITO PEQUENOS
+   28. CELULARES MUITO PEQUENOS
    ===================================================== */
 
 @media (max-width: 400px) {
@@ -849,6 +1373,10 @@ ul {
     .titulo-secao h2,
     .fluxo-texto h2 {
         font-size: 27px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 31px;
     }
 
     .chamada h2 {
