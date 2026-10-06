@@ -279,75 +279,203 @@ ul {
 
 .apresentacao {
     padding: 90px 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5F6F8 100%);
+}
+
+.apresentacao h1 {
+    color: #101827;
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    max-width: 900px;
+}
+
+.apresentacao p {
+    color: #667085;
+    font-size: 17px;
+    max-width: 850px;
+    margin-bottom: 20px;
+}
+
+.apresentacao p:last-child {
+    margin-bottom: 0;
 }
 
 
 /* =====================================================
-   10. ÁREAS
+   10. ÁREAS (OBJETIVO)
    ===================================================== */
 
 .areas {
     background-color: #F5F6F8;
     padding: 90px 0;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.areas .titulo-secao p {
+    margin-top: 15px;
+    max-width: 850px;
 }
 
 
 /* =====================================================
-   11. CARDS DA PÁGINA INICIAL
+   11. HISTÓRIA (NOVA SEÇÃO)
+   ===================================================== */
+
+.historia {
+    padding: 90px 0;
+    background-color: #FFFFFF;
+}
+
+.historia h2 {
+    color: #101827;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    color: #667085;
+    font-size: 17px;
+    max-width: 850px;
+    margin-bottom: 20px;
+}
+
+.historia p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   12. DIRETRIZES ESTRATÉGICAS (NOVA SEÇÃO COM GRID)
+   ===================================================== */
+
+.diretrizes {
+    padding: 90px 0;
+    background-color: #F5F6F8;
+    border-top: 1px solid #E5E7EB;
+}
+
+.diretrizes h2 {
+    color: #101827;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Configuração do Grid (3 colunas iguais) */
+.diretrizes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Estilização dos Cards */
+.card-diretriz {
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid #101827; /* Detalhe azul-marinho no topo */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(16, 24, 39, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-diretriz h3 {
+    color: #101827;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card-diretriz p {
+    color: #667085;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Lista de Valores */
+.card-diretriz ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-diretriz ul li {
+    color: #667085;
+    font-size: 15px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 18px;
+}
+
+/* Marcador customizado cor de laranja */
+.card-diretriz ul li::before {
+    content: "•";
+    color: #F15A24;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.card-diretriz ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Efeito Hover nos Cards */
+.card-diretriz:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(16, 24, 39, 0.08);
+    border-top-color: #F15A24; /* O detalhe do topo muda para Laranja */
+}
+
+
+/* =====================================================
+   13. CARDS DA PÁGINA INICIAL
    ===================================================== */
 
 .cards {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 25px;
+    margin-top: 40px;
 }
 
 .card {
     background-color: #FFFFFF;
-
     padding: 35px;
-
     border: 1px solid #E5E7EB;
-
     border-radius: 10px;
-
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     border-color: #F15A24;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(16, 24, 39, 0.05);
 }
 
 .card-numero {
     color: #F15A24;
-
     font-size: 14px;
     font-weight: bold;
-
     margin-bottom: 20px;
 }
 
 .card h3 {
     color: #101827;
-
     font-size: 22px;
-
     margin-bottom: 15px;
 }
 
 .card p {
     color: #667085;
-
     margin-bottom: 20px;
 }
 
 .card a {
     color: #F15A24;
-
     font-weight: bold;
-
     transition: color 0.3s ease;
 }
 
@@ -357,7 +485,7 @@ ul {
 
 
 /* =====================================================
-   12. FLUXO DA PÁGINA INICIAL
+   14. FLUXO DA PÁGINA INICIAL
    ===================================================== */
 
 .fluxo {
@@ -366,20 +494,15 @@ ul {
 
 .fluxo-conteudo {
     display: grid;
-
     grid-template-columns: 0.8fr 1.2fr;
-
     gap: 70px;
-
     align-items: center;
 }
 
 .fluxo-texto h2 {
     color: #101827;
-
     font-size: 36px;
     line-height: 1.2;
-
     margin-bottom: 20px;
 }
 
@@ -387,85 +510,69 @@ ul {
     color: #667085;
 }
 
-
 /* ETAPAS */
 
 .fluxo-etapas {
     display: flex;
-
     align-items: center;
-
     gap: 15px;
 }
 
 .etapa {
     flex: 1;
-
     padding: 25px;
-
     background-color: #F5F6F8;
-
     border-radius: 10px;
 }
 
 .etapa span {
     color: #F15A24;
-
     font-size: 13px;
     font-weight: bold;
 }
 
 .etapa h3 {
     color: #101827;
-
     margin: 8px 0;
 }
 
 .etapa p {
     color: #667085;
-
     font-size: 14px;
 }
 
 .seta {
     color: #F15A24;
-
     font-size: 25px;
-
     font-weight: bold;
 }
 
 
 /* =====================================================
-   13. TÍTULO DAS PÁGINAS INTERNAS
+   15. TÍTULO DAS PÁGINAS INTERNAS
    ===================================================== */
 
 .titulo-pagina {
     background-color: #F5F6F8;
-
     padding: 80px 0;
 }
 
 .titulo-pagina h1 {
     color: #101827;
-
     font-size: 48px;
     line-height: 1.15;
-
     margin-bottom: 20px;
 }
 
 .titulo-pagina p:not(.texto-destaque) {
     color: #667085;
-
     font-size: 18px;
-
     max-width: 650px;
 }
 
 
 /* =====================================================
-   14. PRODUTIVIDADE - INTRODUÇÃO
+   16. PRODUTIVIDADE - INTRODUÇÃO
    ===================================================== */
 
 .produtividade-intro {
@@ -474,7 +581,7 @@ ul {
 
 
 /* =====================================================
-   15. PRODUTIVIDADE - FLUXO
+   17. PRODUTIVIDADE - FLUXO
    ===================================================== */
 
 .produtividade-fluxo {
@@ -483,304 +590,172 @@ ul {
 
 .fluxo-produtividade {
     display: flex;
-
     align-items: stretch;
-
     gap: 18px;
 }
 
 .bloco-produtividade {
     flex: 1;
-
     background-color: #F5F6F8;
-
     border: 1px solid #E5E7EB;
-
     border-radius: 10px;
-
     padding: 30px;
 }
 
 .numero-bloco {
     color: #F15A24;
-
     font-size: 13px;
-
     font-weight: bold;
-
     letter-spacing: 1px;
 }
 
 .bloco-produtividade h2 {
     color: #101827;
-
     font-size: 28px;
-
     margin: 10px 0 12px;
 }
 
 .bloco-produtividade > p {
     color: #667085;
-
     font-size: 15px;
-
     margin-bottom: 25px;
 }
-
 
 /* EXEMPLO DO DADO */
 
 .exemplo-dado {
     background-color: #FFFFFF;
-
     border-left: 4px solid #F15A24;
-
     border-radius: 6px;
-
     padding: 15px 18px;
 }
 
 .exemplo-dado span {
     display: block;
-
     color: #667085;
-
     font-size: 13px;
-
     margin-bottom: 3px;
 }
 
 .exemplo-dado strong {
     display: inline-block;
-
     color: #101827;
-
     font-size: 30px;
-
     line-height: 1.1;
 }
 
 .exemplo-dado small {
     color: #667085;
-
-    font-size: 13px;
-
-    margin-left: 5px;
-}
-
-
-/* SETAS */
-
-.seta-produtividade {
-    display: flex;
-
-    align-items: center;
-
-    color: #F15A24;
-
-    font-size: 25px;
-
-    font-weight: bold;
+    font-size: 12px;
 }
 
 
 /* =====================================================
-   16. PRODUTIVIDADE - INDICADORES
+   18. RODAPÉ (FOOTER)
    ===================================================== */
 
-.indicadores {
-    background-color: #F5F6F8;
-
-    padding: 90px 0;
+.rodape {
+    background-color: #101827;
+    color: #FFFFFF;
+    padding: 60px 0 0 0;
+    margin-top: auto;
 }
 
-.cards-indicadores {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
-.indicador-card {
-    background-color: #FFFFFF;
+.rodape-marca p {
+    color: #667085;
+    margin-top: 15px;
+    font-size: 14px;
+}
 
-    border: 1px solid #E5E7EB;
-
-    border-radius: 10px;
-
-    padding: 28px;
-
+.rodape-final {
+    border-top: 1px solid #1D3557;
+    padding: 20px 0;
     text-align: center;
 }
 
-.indicador-card span {
-    display: block;
-
+.rodape-final p {
     color: #667085;
-
-    font-size: 14px;
-
-    margin-bottom: 10px;
-}
-
-.indicador-card strong {
-    display: block;
-
-    color: #101827;
-
-    font-size: 36px;
-
-    line-height: 1.1;
-
-    margin-bottom: 5px;
-}
-
-.indicador-card p {
-    color: #F15A24;
-
     font-size: 13px;
-
-    font-weight: bold;
+    margin: 0;
 }
 
 
 /* =====================================================
-   17. PRODUTIVIDADE - TIPOS DE INDICADORES
+   19. COMPLEMENTO DE RESPONSIVIDADE GLOBAL
    ===================================================== */
 
-.tipos-indicadores {
-    padding: 90px 0;
+/* Ajustes gerais para telas médias (Tablets até 992px) */
+@media (max-width: 992px) {
+    .hero-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-texto {
+        margin: 0 auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fluxo-conteudo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
-.lista-indicadores {
-    display: grid;
+/* Ajustes gerais para telas pequenas (Celulares até 768px) */
+@media (max-width: 768px) {
+    .cabecalho-conteudo {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
 
-    grid-template-columns: repeat(3, 1fr);
+    .menu ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    gap: 25px;
+    .hero h1 {
+        font-size: 36px;
+    }
 
-    margin-top: 45px;
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .fluxo-etapas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .seta {
+        transform: rotate(90deg); /* Faz a seta apontar para baixo no mobile */
+        margin: 5px 0;
+    }
+
+    .fluxo-produtividade {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }
-
-.lista-indicadores article {
-    border-top: 3px solid #F15A24;
-
-    padding: 25px 5px 10px;
-}
-
-.lista-indicadores h3 {
-    color: #101827;
-
-    font-size: 20px;
-
-    margin-bottom: 12px;
-}
-
-.lista-indicadores p {
-    color: #667085;
-
-    font-size: 15px;
-}
-
-
-/* =====================================================
-   18. OPERAÇÃO & INSIGHTS - INTRODUÇÃO
-   ===================================================== */
-
-.insights-intro {
-    padding: 80px 0 70px;
-}
-
-.operacao-etapas {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 30px;
-
-    margin-top: 50px;
-}
-
-.operacao-etapa {
-    padding-right: 25px;
-
-    border-right: 1px solid #E5E7EB;
-}
-
-.operacao-etapa:last-child {
-    border-right: none;
-}
-
-.operacao-etapa span {
-    color: #F15A24;
-
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.operacao-etapa h3 {
-    color: #101827;
-
-    font-size: 21px;
-
-    margin: 10px 0;
-}
-
-.operacao-etapa p {
-    color: #667085;
-
-    font-size: 15px;
-}
-
-
-/* =====================================================
-   19. OPERAÇÃO & INSIGHTS - OCORRÊNCIAS
-   ===================================================== */
-
-.ocorrencias {
-    background-color: #F5F6F8;
-
-    padding: 90px 0;
-}
-
-.cards-ocorrencias {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 35px;
-
-    margin-top: 50px;
-}
-
-.ocorrencia-card {
-    padding: 10px 25px 10px 0;
-
-    border-bottom: 2px solid #E5E7EB;
-}
-
-.ocorrencia-numero {
-    color: #F15A24;
-
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.ocorrencia-card h3 {
-    color: #101827;
-
-    font-size: 22px;
-
-    margin: 10px 0;
-}
-
-.ocorrencia-card p {
-    color: #667085;
-
-    font-size: 15px;
-}
-
 
 /* =====================================================
    20. OPERAÇÃO & INSIGHTS - INSIGHTS
