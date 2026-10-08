@@ -210,7 +210,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
-    text-align: ;
+    
 }
 
 .card {
@@ -770,9 +770,7 @@ section {
     color: #667085;
 }
 
-.insight-destaque {
-    /* border-bottom: 2px solid #000000; */
-}
+
 
 .voce-sabia {
     padding: 55px 0;
