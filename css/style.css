@@ -110,6 +110,7 @@ section {
     height: auto;
 }
 
+
 .menu ul {
     display: flex;
     align-items: center;
@@ -187,7 +188,7 @@ section {
 }
 
 .botao:hover {
-    background-color: #D94716;
+    background-color: #e64813;
     border-color: #D94716;
     transform: translateY(-2px);
 }
@@ -209,6 +210,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
+    text-align: ;
 }
 
 .card {
@@ -769,7 +771,7 @@ section {
 }
 
 .insight-destaque {
-    border-top: 4px solid #F15A24;
+    /* border-bottom: 2px solid #000000; */
 }
 
 .voce-sabia {
@@ -851,8 +853,9 @@ section {
     margin-bottom: 18px;
 }
 
-.rodape-marca .logo img {
+.rodape-marca  img {
     width: 140px;
+    
 }
 
 .rodape-marca p {
@@ -1106,3 +1109,4 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
