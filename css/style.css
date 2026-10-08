@@ -584,7 +584,7 @@ section {
 }
 
 .numero-bloco {
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     width: 42px;
